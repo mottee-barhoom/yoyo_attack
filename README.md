@@ -176,3 +176,17 @@ y = df["label"]
 
 print(f"Features: {X.shape[1]} columns")
 print(f"Samples: {X.shape[0]} rows")
+```python
+
+## 📜 Citation & License
+
+### Cite This Dataset
+```bibtex
+@dataset{yoyo_base_2026,
+  author = Mottee BARHOOM,
+  title = {Kubernetes YoYo Attack Detection - Base Dataset},
+  year = {2026},
+  publisher = {GitHub},
+  url = {https://github.com/mottee-barhoom/yoyo_attack},
+  note = {Master's Thesis Research, ITMO University}
+}

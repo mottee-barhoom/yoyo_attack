@@ -177,7 +177,7 @@ y = df["label"]
 print(f"Features: {X.shape[1]} columns")
 print(f"Samples: {X.shape[0]} rows")
 
----
+```
 
 ## 📜 Citation & License
 

@@ -159,16 +159,6 @@ The retained features span five measurement sources:
 | **Sampling Interval** | 10 seconds |
 | **Total Samples** | 2,515 labeled instances |
 
-### Data Collection Pipeline
-```mermaid
-graph LR
-    A[Deploy Nginx + HPA] --> B[Start Metrics Collection]
-    B --> C[Execute Attack Pattern]
-    C --> D[Collect 5-Source Metrics]
-    D --> E[Label: ATTACK/NORMAL]
-    E --> F[Export to CSV]
-
-
 ---
 
 ## 🛠️ Usage Examples

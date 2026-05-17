@@ -132,23 +132,6 @@ The retained features span five measurement sources:
 
 *See `data_dictionary.csv` for complete column descriptions, data types, and value ranges.*
 
----
-
-## 🛠️ Usage Examples
-
-### Python (Pandas)
-```python
-import pandas as pd
-
-# Load base dataset
-df = pd.read_csv("base_dataset.csv")
-
-# Separate features and target
-X = df.drop(columns=["label"])
-y = df["label"]
-
-print(f"Features: {X.shape[1]} columns")
-print(f"Samples: {X.shape[0]} rows")
 
 ---
 
@@ -184,3 +167,22 @@ graph LR
     C --> D[Collect 5-Source Metrics]
     D --> E[Label: ATTACK/NORMAL]
     E --> F[Export to CSV]
+
+
+---
+
+## 🛠️ Usage Examples
+
+### Python (Pandas)
+```python
+import pandas as pd
+
+# Load base dataset
+df = pd.read_csv("base_dataset.csv")
+
+# Separate features and target
+X = df.drop(columns=["label"])
+y = df["label"]
+
+print(f"Features: {X.shape[1]} columns")
+print(f"Samples: {X.shape[0]} rows")

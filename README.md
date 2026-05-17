@@ -95,20 +95,25 @@ The raw experimental export contained **52 columns**. To ensure production viabi
 ##  Visualizations
 
 ### Class Distribution
-![Class Distribution](analysis/01_class_distribution.png)
+<img width="1770" height="1166" alt="01_class_distribution" src="https://github.com/user-attachments/assets/50cef824-edc3-4441-b739-a90f352eb869" />
 *Figure 1: Balanced class distribution ensures robust model training without sampling bias.*
 
 ### Feature Type Distribution
-![Feature Types](analysis/02_feature_types.png)
+<img width="1222" height="1310" alt="02_feature_types" src="https://github.com/user-attachments/assets/d01bb59a-dd01-4aaf-b7f5-0a79f0b530d8" />
 *Figure 2: All 34 base features are numeric system-level metrics suitable for ML algorithms.*
 
 ### Feature Correlation Heatmap
-![Correlation Heatmap](analysis/04_correlation_heatmap.png)
+<img width="1222" height="1310" alt="02_feature_types" src="https://github.com/user-attachments/assets/8443651c-53f0-4b5e-a359-0d222cc9b586" />
 *Figure 3: Correlation matrix reveals feature relationships and potential multicollinearity.*
 
 ### Top Feature Distributions
-![Distribution 1](analysis/05_dist_1_*.png)
-![Distribution 2](analysis/05_dist_2_*.png)
+
+<img width="2370" height="1169" alt="05_dist_1_network_in" src="https://github.com/user-attachments/assets/a2d3e11e-4f81-4569-b17f-a943916327e9" />
+<img width="2370" height="1169" alt="05_dist_2_network_out" src="https://github.com/user-attachments/assets/c636388e-d440-4ddc-8881-57481d289134" />
+<img width="2370" height="1169" alt="05_dist_3_pod_memory_usage_bytes" src="https://github.com/user-attachments/assets/ebd0b81d-5a5f-454e-bd5b-ba36f4c71649" />
+<img width="2370" height="1169" alt="05_dist_4_network_packets_in" src="https://github.com/user-attachments/assets/b7fbf380-0c8a-4f75-96e6-7d534ca9647e" />
+<img width="2370" height="1169" alt="05_dist_5_network_packets_out" src="https://github.com/user-attachments/assets/9391985a-3daa-4ca5-b098-baafc835b260" />
+<img width="2370" height="1169" alt="05_dist_6_http_request_rate" src="https://github.com/user-attachments/assets/15368c48-1b91-4daf-ba07-8d31410c34d3" />
 *Figure 4-9: Distribution plots for top 6 features by variance, split by class (`ATTACK` vs `NORMAL`).*
 
 ---

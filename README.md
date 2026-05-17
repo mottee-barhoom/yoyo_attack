@@ -149,3 +149,36 @@ y = df["label"]
 
 print(f"Features: {X.shape[1]} columns")
 print(f"Samples: {X.shape[0]} rows")
+
+## 🔬 Experimental Methodology
+
+### Cluster Configuration
+| Component | Specification |
+|-----------|---------------|
+| **Kubernetes Version** | v1.27.3 |
+| **Container Runtime** | containerd 1.6.x |
+| **Cluster Topology** | Kind-based (1 control-plane + workers) |
+| **CNI Plugin** | kindnet (lightweight, isolated testing) |
+| **Allocated Resources** | 4 cores, 12 GB RAM |
+| **Target Application** | Nginx with HPA (`minReplicas=1`, `maxReplicas=5`, `targetCPU=50%`) |
+
+### Attack Simulation Protocol
+| Parameter | Value |
+|-----------|-------|
+| **Attack Types** | Oscillation-focused, Performance-focused, Economic-focused |
+| **Experiments per Type** | 16 controlled scenarios |
+| **Total Experiments** | 48 |
+| **Experiment Duration** | 6-8 minutes (including 30s stabilization) |
+| **Attack Phase** | 60-120 seconds of oscillating load |
+| **Cooldown Phase** | 60-120 seconds of normal traffic |
+| **Sampling Interval** | 10 seconds |
+| **Total Samples** | 2,515 labeled instances |
+
+### Data Collection Pipeline
+```mermaid
+graph LR
+    A[Deploy Nginx + HPA] --> B[Start Metrics Collection]
+    B --> C[Execute Attack Pattern]
+    C --> D[Collect 5-Source Metrics]
+    D --> E[Label: ATTACK/NORMAL]
+    E --> F[Export to CSV]

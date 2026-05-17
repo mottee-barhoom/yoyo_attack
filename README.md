@@ -103,7 +103,7 @@ The raw experimental export contained **52 columns**. To ensure production viabi
 *Figure 2: All 34 base features are numeric system-level metrics suitable for ML algorithms.*
 
 ### Feature Correlation Heatmap
-<img width="1222" height="1310" alt="02_feature_types" src="https://github.com/user-attachments/assets/8443651c-53f0-4b5e-a359-0d222cc9b586" />
+<img width="3408" height="3082" alt="04_correlation_heatmap" src="https://github.com/user-attachments/assets/6cca1a02-9c7b-48ea-9c12-ab4e94e26886" />
 *Figure 3: Correlation matrix reveals feature relationships and potential multicollinearity.*
 
 ### Top Feature Distributions
